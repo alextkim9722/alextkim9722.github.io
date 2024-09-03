@@ -1,69 +1,10 @@
 #root {
-  width:100vw;
-  height:100vh;
+  --root-padding:50px;
+
+  width:calc(100vw - (var(--root-padding) * 2));
+  height:calc(100vh - (var(--root-padding) * 2));
 
   background-color: rgb(26, 31, 30);
-}
 
-#container {
-  width: 1280px;
-  height:100%;
-
-  margin: 0 auto;
-
-  background-color: aliceblue;
-}
-
-#header {
-  position: relative;
-  top: 25px;
-
-  width: 90%;
-  height: 50px;
-
-  margin: 0px auto;
-
-  background-color: rgb(62, 105, 143);
-}
-
-#content {
-  width: 90%;
-
-  margin:75px auto;
-}
-
-#profile {
-  position: relative;
-
-  width:500px;
-  height:100px;
-
-  margin: 0 auto;
-  margin-bottom: 50px;
-
-  background-color: rgb(62, 105, 143);
-}
-
-#description {
-  position: relative;
-
-  width:630px;
-  height:250px;
-
-  margin: 0 auto;
-  margin-bottom: 50px;
-
-  background-color: rgb(62, 105, 143);
-}
-
-#widget {
-  position: relative;
-
-  width:250px;
-  height:250px;
-
-  margin: 0 auto;
-  margin-bottom: 50px;
-
-  background-color: rgb(62, 105, 143);
+  padding:var(--root-padding);
 }

@@ -1,0 +1,54 @@
+.SidebarButton {
+    --height: 30px;
+
+    width: 225px;
+    height: var(--height);
+
+    line-height: var(--height);
+    vertical-align: middle;
+    text-align: center;
+    font-size: var(--height);
+
+    border-style: double;
+    border-width: 10px;
+    border-color:rgb(26, 31, 30);
+    border-radius: 20px;
+
+    background-color: darkorange;
+    color:black;
+
+    padding: 10px;
+    margin: 10px;
+}
+
+#SidebarNavigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    height: 100%;
+    width: 100%;
+}
+
+#Sidebar {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    
+    position: relative;
+    left: 0px;
+    top: 0px;
+
+    width:fit-content;
+    height:100%;
+}
+
+#Title {
+    font-size: 75px;
+    height: fit-content;
+  
+    -webkit-text-stroke-width:3px;
+    -webkit-text-fill-color: rgb(26, 31, 30);
+    -webkit-text-stroke-color:darkorange;
+}
