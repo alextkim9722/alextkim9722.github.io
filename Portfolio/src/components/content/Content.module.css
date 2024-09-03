@@ -1,0 +1,14 @@
+#MainContentFrame {
+    --margin: 75px;
+    --padding: 25px;
+
+    flex-grow: 1;
+    height: calc(100% - var(--margin) * 2 - var(--padding) * 2);
+
+    margin:var(--margin);
+    padding:var(--padding);
+
+    border-style: double;
+    border-color: darkorange;
+    color: darkorange;
+}

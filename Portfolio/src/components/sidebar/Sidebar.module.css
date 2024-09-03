@@ -21,6 +21,32 @@
     margin: 10px;
 }
 
+.SidebarButtonClicked {
+    --height: 30px;
+
+    position: relative;
+    left:50px;
+
+    width: 225px;
+    height: var(--height);
+
+    line-height: var(--height);
+    vertical-align: middle;
+    text-align: center;
+    font-size: var(--height);
+
+    border-style: double;
+    border-width: 10px;
+    border-color:rgb(102, 241, 74);
+    border-radius: 20px;
+
+    background-color: darkorange;
+    color:rgb(102, 241, 74);
+
+    padding: 10px;
+    margin: 10px;
+}
+
 #SidebarNavigation {
     display: flex;
     flex-direction: column;
@@ -51,4 +77,15 @@
     -webkit-text-stroke-width:3px;
     -webkit-text-fill-color: rgb(26, 31, 30);
     -webkit-text-stroke-color:darkorange;
+
+    cursor:pointer;
+    transition-duration:100ms;
+}
+
+#Title:hover {
+    scale: 1.1;
+}
+
+#Title:active {
+    -webkit-text-fill-color: rgb(255, 209, 122);
 }

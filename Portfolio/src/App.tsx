@@ -1,13 +1,17 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Sidebar from './components/sidebar/Sidebar'
+import Content from './components/content/Content'
 
-import globalStyles from './GlobalStyles.module.css'
 import './App.css'
 
 function App() {
 
   return (
     <>
+    <BrowserRouter>
       <Sidebar />
+      <Content />
+    </BrowserRouter>
     </>
   )
 }

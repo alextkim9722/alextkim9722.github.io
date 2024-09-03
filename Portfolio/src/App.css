@@ -1,6 +1,9 @@
 #root {
   --root-padding:50px;
 
+  display:flex;
+  flex-direction: row;
+
   width:calc(100vw - (var(--root-padding) * 2));
   height:calc(100vh - (var(--root-padding) * 2));
 
