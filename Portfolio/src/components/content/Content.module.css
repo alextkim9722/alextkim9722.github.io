@@ -1,4 +1,7 @@
 #MainContentFrame {
+    display:flex;
+    flex-direction: column;
+    
     --margin: 75px;
     --padding: 25px;
 

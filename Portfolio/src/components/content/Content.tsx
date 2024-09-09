@@ -5,6 +5,7 @@ import About from '../about/About'
 import Projects from '../projects/Projects'
 
 import styles from './Content.module.css'
+import WorkExperience from '../work-experience/WorkExperience'
 
 export default function Content() {
     const location = useLocation();
@@ -29,9 +30,10 @@ export default function Content() {
     return(
         <>
         <div id={`${styles.MainContentFrame}`}>
-            <h2 style={{margin:'0px', textAlign:'center'}}>- &gt; {pageName} &lt; -</h2>
+            <h2 style={{margin:'0px', marginBottom:'20px', textAlign:'center'}}>- &gt; {pageName} &lt; -</h2>
             <Routes>
                 <Route path='/about' element={<About />} />
+                <Route path='/work-experience' element={<WorkExperience />} />
                 <Route path='/projects' element={<Projects />} />
             </Routes>
         </div>
