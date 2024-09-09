@@ -17,3 +17,29 @@
     border-color: darkorange;
     color: darkorange;
 }
+
+.transition {
+    display:flex;
+    flex-direction: column;
+
+    width:100%;
+    height:100%;
+}
+
+.transitionEnter {
+    opacity: 0;
+}
+
+.transitionEnterActive {
+    opacity: 1;
+    transition: opacity 300ms;
+}
+
+.transitionExit {
+    opacity: 1;
+}
+
+.transitionExitActive {
+    opacity: 0;
+    transition: opacity 300ms;
+}

@@ -18,7 +18,7 @@ export function Section(props: SectionObject)
     {
         var skillElements: JSX.Element[] = [];
 
-        skills.forEach(element => skillElements.push(<TechIcon src={element} />));
+        skills.forEach(element => skillElements.push(<TechIcon key={element} src={element} />));
 
         return skillElements;
     }
@@ -27,7 +27,7 @@ export function Section(props: SectionObject)
     {
         var pointElements: JSX.Element[] = [];
 
-        points.forEach(point => pointElements.push(<li > {point} </li>))
+        points.forEach(point => pointElements.push(<li key={point}> {point} </li>))
 
         return pointElements;
     }
