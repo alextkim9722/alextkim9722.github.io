@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter } from 'react-router-dom'
 import Sidebar from './components/sidebar/Sidebar'
 import Content from './components/content/Content'
 
