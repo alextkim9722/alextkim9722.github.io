@@ -54,7 +54,7 @@ export default function Sidebar() {
                 setContactClicked(true);
                 navigate('/contact');
                 break;
-            default:
+            case "title":
                 localStorage.setItem("elem", "title");
                 navigate('/');
                 break;

@@ -1,8 +1,6 @@
-import { BrowserRouter, RouterProvider } from 'react-router-dom'
-import Sidebar from './components/sidebar/Sidebar'
-import Content from './components/content/Content'
+import { RouterProvider } from 'react-router-dom'
 
-import { router } from './components/content/Content'
+import { router } from './components/Router'
 
 import './App.css'
 

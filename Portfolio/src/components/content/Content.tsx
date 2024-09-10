@@ -1,41 +1,10 @@
-import { useLocation, useOutlet, createBrowserRouter, RouteObject } from 'react-router-dom'
-import { useEffect, useState, createRef } from 'react'
+import { useLocation, useOutlet } from 'react-router-dom'
+import { useEffect, useState } from 'react'
 import { CSSTransition, SwitchTransition } from 'react-transition-group'
 
-import About from '../about/About'
-import Projects from '../projects/Projects'
+import { routes } from '../Router'
 
 import styles from './Content.module.css'
-import WorkExperience from '../work-experience/WorkExperience'
-import Sidebar from '../sidebar/Sidebar'
-
-const routes:any[] = [
-    { path:"/", name:"main", element: <MainPage />, nodeRef: createRef() },
-    { path:"/about", name:"about", element: <About />, nodeRef: createRef() },
-    { path:"/work-experience", name:"work-experience", element: <WorkExperience />, nodeRef: createRef() },
-    { path:"/projects", name:"projects", element: <Projects />, nodeRef: createRef() }
-];
-
-export const router = createBrowserRouter(
-    [{
-        path:"/",
-        element: <MainPage />,
-        children: [
-            { path:"/about", element: <About />},
-            { path:"/work-experience", element: <WorkExperience />},
-            { path:"/projects", element: <Projects />}
-        ]
-    }]
-);
-
-function MainPage() {
-    return (
-        <>
-        <Sidebar />
-        <Content />
-        </>
-    )
-}
 
 export default function Content() {
     const location = useLocation();
